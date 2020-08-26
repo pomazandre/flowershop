@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <header class="header">
+        <h1>Интернет-магазин цветов</h1>
+        <p-menubar [model]="mdlMenuItems">
+            <button pButton class="ui-button-rounded ui-button-secondary" label="Корзина" (click)="showBag()"> </button>
+        </p-menubar>
+    </header>
+    <article class="main">
+        <router-outlet></router-outlet>
+    </article>
+    <footer class="footer">
+        <div class="p-grid">
+            <div class="p-col-fixed" style="width:300px" align="left">
+                <b>КОНТАКТЫ</b><br>
+                C 09.00 до 21.00 без выходных<br>
+                Минск, проспект Мира, 88, <br>
+                5 (метро Рижская) <br>
+                (8017) 317 20 53<br>
+                info@sweetflowers.by
+            </div>
+            <div class="p-col-fixed" style="width:300px" align="left">
+                <a href="/delivery/">Доставка</a><br>
+                <br>
+                <a href="/pay/">Оплата</a><br>
+            </div>
+            <div class="p-col">
+                
+            </div>
+        </div>
+    </footer>
+</div>

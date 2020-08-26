@@ -1,0 +1,50 @@
+<p-dialog header="Авторизация" [(visible)]="Display">
+
+
+  <div class="ui-g">
+    <div class="ui-g-2">
+    </div>
+    <div class="ui-g-6">
+      <div class="ui-g">
+      <p>
+      <b>Авторизация</b>
+      </p>
+      </div>
+      <div class="ui-g">
+      <div class="ui-g-6">
+        Пользователь
+      </div>
+      <div class="ui-g-6">
+        <input type="text" pInputText size="15" [(ngModel)]="User"/>
+      </div>
+    </div>
+
+    <div class="ui-g">
+      <div class="ui-g-6">
+        Пароль
+      </div>
+      <div class="ui-g-6">
+        <input type="password" pInputText size="15" [(ngModel)]="Pass"/>
+      </div>
+    </div>
+    
+    <div class="ui-g">
+      <div class="ui-g-4">
+      </div>
+      <div class="ui-g-4">
+      </div>
+      <div class="ui-g-4">
+          <div class="ui-g-6">
+          </div>
+          <div class="ui-g-6">
+            <button type="button" pButton (click)="checkLogin()" label="ОK"></button>
+          </div>
+      </div>
+    </div>
+   </div>
+   <div class="ui-g-4">
+    </div>
+
+  </div>
+
+</p-dialog>
